@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="engine.Location"/>
+    <fullyQualifiedTypeName name="engine.World"/>
+    <fullyQualifiedTypeName name="engine.LOCATION_ID"/>
+    <fullyQualifiedTypeName name="engine.ITEM_ID"/>
+    <fullyQualifiedTypeName name="engine.InventoryItem"/>
+    <fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+    <fullyQualifiedTypeName name="engine.PlayerQuest"/>
+    <fullyQualifiedTypeName name="engine.QuestCompletionItem"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

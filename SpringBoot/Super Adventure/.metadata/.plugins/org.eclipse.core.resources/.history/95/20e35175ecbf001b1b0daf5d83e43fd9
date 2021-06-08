@@ -1,0 +1,89 @@
+/**
+ * 
+ */
+package engine;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Entity;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+/**
+ * @author bak12
+ *
+ */
+@Entity
+@Getter @Setter @ToString @EqualsAndHashCode(callSuper=true)
+public class Player extends LivingCreature
+{
+	private int Gold;
+	private int ExperiencePoints;
+	private int Level;
+	
+	private Location CurrentLocation;
+	
+	private List<InventoryItem> Inventory;
+	private List<PlayerQuest> Quests;
+	
+	/**
+	 * @param currentHitPoints
+	 * @param maximumHitPoints
+	 * @param gold
+	 * @param experiencePoints
+	 * @param level
+	 */
+	public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level)
+	{
+		super(currentHitPoints, maximumHitPoints);
+		Gold = gold;
+		ExperiencePoints = experiencePoints;
+		Level = level;
+		Inventory = new ArrayList<InventoryItem>();
+		Quests = new ArrayList<PlayerQuest>();
+	}
+
+	public void setInventory(InventoryItem inventoryItem)
+	{
+		Inventory.add(inventoryItem);		
+	}
+	
+	/**
+	 * Checks if there is an Item required to enter the new location
+	 * Checks if the player has the required item to enter this location**/
+	
+	public boolean HasRequiredItemToEnterThisLocation(Location location)
+	{
+		if(location.getItemRequiredToEnter() == null)
+		{
+			/**
+			 * There is no required item for this location,
+			 * return true
+			 * */
+			return true;			
+		}
+		
+		/*
+		 * See if the player has the required item in their inventory*/
+		for(InventoryItem ii: Inventory)
+		{
+			if(ii.getDetails().getId() == location.getItemRequiredToEnter().getId())
+			{
+				/*We found the required item, so return "true"*/
+				return true;
+			}
+		}
+		/*We did not find the required item in player's inventory, so return false*/
+		return false;
+		
+	}
+
+	public void setQuests(PlayerQuest playerQuest)
+	{
+		Quests.add(playerQuest);		
+	}
+}
