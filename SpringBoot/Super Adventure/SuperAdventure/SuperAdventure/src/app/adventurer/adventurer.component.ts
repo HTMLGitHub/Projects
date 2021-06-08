@@ -1,10 +1,11 @@
+import { Adventurer } from './../Engine/Adventurer';
 import { Item } from './../Engine/Item';
 import { PlayerLocation } from '../Engine/PlayerLocation';
 import { LivingCreature } from '../Engine/LivingCreature';
-import { Adventurer } from '../Engine/Adventurer';
 import { Component, OnInit } from '@angular/core';
 import { Quest } from '../Engine/Quest';
 import { Monster } from '../Engine/Monster';
+import { Identifiers } from '@angular/compiler';
 
 @Component
 ({
@@ -17,7 +18,7 @@ export class AdventurerComponent implements OnInit
   currentPlace: PlayerLocation = 
   {
     Id: 1,
-    Name: 'Home',
+    Name: "Home",
     Description: "Your house. Looks boring!",
     ItemRequiredToEnter: null,
     QuestAvailableHere: null,

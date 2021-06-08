@@ -16,8 +16,9 @@
 </div>
 
 <div class="location">
-        <div><span>Current Location: </span>{{player.CurrentLocation.Name}}</div>
-        <div><span></span>{{player.CurrentLocation.Description}}</div>
+        <tr *ngFor="let currentPlace of player.CurrentLocation">
+                <td>{{currentPlace.Name}}</td>
+        </tr>
 </div>
 
 <div class="messages">
