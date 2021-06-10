@@ -49,4 +49,33 @@ export class AdventurerComponent implements OnInit
     
   }
 
+  btnNorth(): void
+  {
+
+  }
+
+  btnSouth(): void
+  {
+
+  }
+
+  btnEast(): void
+  {
+
+  }
+
+  btnWest(): void
+  {
+
+  }
+
+  btnWeapon(): void
+  {
+
+  }
+
+  btnPotion(): void
+  {
+    
+  }
 }
