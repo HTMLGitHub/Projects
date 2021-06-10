@@ -1,40 +1,56 @@
 <h2>{{player.name}}</h2>
-<div class="Stats">
-        <div><span>Current Hit Points: </span>{{player.currentHitPoints}}</div>
-        <div><span>Maximum Hit Points: </span>{{player.maximumHitPoints}}</div>
-        <div><span>Gold: </span>{{player.gold}}</div>
-        <div><span>Experience Points: </span>{{player.experiencePoints}}</div>
-        <div><span>Level: </span>{{player.level}}</div>
+<div class="gameBoard">
+        <div class="topBoard">
+                <div class="Stats">
+                        <div><span>Current Hit Points: </span>{{player.currentHitPoints}}</div>
+                        <div><span>Maximum Hit Points: </span>{{player.maximumHitPoints}}</div>
+                        <div><span>Gold: </span>{{player.gold}}</div>
+                        <div><span>Experience Points: </span>{{player.experiencePoints}}</div>
+                        <div><span>Level: </span>{{player.level}}</div>
+                </div>
+                <div class="location">
+                        <div><span>Current Location: </span>{{player.CurrentLocation?.Name}}
+                </div>
+        </div>
+        <div class="middleBoard">
+                <div class="inventory">
+
+                </div>
+
+                <div class="messages">
+                        <div><span>Current Location: </span>{{player.CurrentLocation?.Description}}
+                </div>
+        </div>
+        <div class="bottomBoard">
+                <div class="quests">
+
+                </div>
+
+                <div class="directions">
+                        <div class="northButton">
+                                <button (click)="btnNorth()" mat-raised-button id="North">North</button>
+                        </div>
+                        <div class="middleButtons">
+                                <button (click)="btnEast()" mat-raised-button id="East">East</button>
+                                <button (click)="btnWest()" mat-raised-button id="West">West</button>
+                        </div>
+                        <div class="southButton">
+                                <button (click)="btnSouth()" mat-raised-button id="South">South</button>
+                        </div>                        
+                </div>
+                <div class="bottomButtons">
+                        <div class="useable-dropdown">
+                                                
+                        </div>
+
+                        <div class="useable-button">
+                                <button (click)="btnWeapon()" mat-raised-button id="UseWeapon">Use Weapon</button>
+                                <button (click)="btnPotion()" mat-raised-button id="UsePotion">Use Potion</button>
+                        </div>
+                </div>
+        </div>
 </div>
 
-<div class="inventory">
 
-</div>
 
-<div class="quests">
 
-</div>
-
-<div class="location">
-        <div><span>Current Location: </span>{{player.CurrentLocation?.Name}}
-</div>
-
-<div class="messages">
-        <div><span>Current Location: </span>{{player.CurrentLocation?.Description}}
-</div>
-
-<div class="directions">
-        <button (click)="btnNorth()" mat-raised-button id="North">North</button>
-        <button (click)="btnSouth()" mat-raised-button id="South">South</button>
-        <button (click)="btnEast()" mat-raised-button id="East">East</button>
-        <button (click)="btnWest()" mat-raised-button id="West">West</button>
-</div>
-
-<div class="useable-dropdown">
-        
-</div>
-
-<div class="useable-button">
-        <button (click)="btnWeapon()" mat-raised-button id="UseWeapon">Use Weapon</button>
-        <button (click)="btnPotion()" mat-raised-button id="UsePotion">Use Potion</button>
-</div>
