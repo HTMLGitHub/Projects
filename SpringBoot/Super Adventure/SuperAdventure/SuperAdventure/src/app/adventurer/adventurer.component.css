@@ -1,6 +1,123 @@
+/*The whole game board*/
+
+.gameBoard {
+    width: 680px;
+    border: 1px solid black;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Starting the highest section*/
+
 .topBoard {
+    width: 650px;
+    border: 5px dashed blue;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/*Starting the stats section*/
+
+.Stats {
+    width: 200px;
+    float: left;
+    border: 5px solid purple;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*Ending the stats section*/
+
+
+/*Starting location section*/
+
+.location {
+    float: right;
+    margin: auto;
     width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
+    border: 5px dashed red;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/*Ending Location*/
+
+
+/*Ending the highest section*/
+
+
+/*Starting the middle section*/
+
+.middleBoard {
+    width: 650px;
+    border: 5px dashed blue;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/*Starting Inventory*/
+
+.inventory {
+    width: 200px;
+    float: left;
+    border: 5px solid purple;
+    padding: 15px;
+}
+
+
+/*Starting Messages*/
+
+.messages {
+    float: right;
+    width: 300px;
+    border: 5px dashed red;
+    padding: 15px;
+    overflow: hidden;
+    overflow: auto;
+}
+
+
+/*Ending Messages*/
+
+
+/*Ending middle Section*/
+
+
+/*Starting Bottom section*/
+
+.bottomBoard {
+    width: 650px;
+    border: 5px dashed blue;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/*Starting directions section*/
+
+.quests {
+    width: 200px;
+    float: left;
+    border: 5px solid purple;
+    padding: 15px;
+}
+
+
+/*Starting bottomButtons*/
+
+.clickable {
+    float: right;
+    width: 300px;
+    border: 5px dashed red;
+    padding: 15px;
+    overflow: hidden;
 }
