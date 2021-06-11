@@ -236,7 +236,7 @@ starting bottombuttons Section*/
 
 .useable-dropdown {
     width: 250px;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 15px;
     overflow: hidden;
 }
