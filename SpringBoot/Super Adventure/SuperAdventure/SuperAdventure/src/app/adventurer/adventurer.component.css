@@ -14,8 +14,8 @@
 /*Starting the highest section*/
 
 .topBoard {
+    position: relative;
     width: 650px;
-    border: 5px dashed blue;
     padding: 10px;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@
 .Stats {
     width: 200px;
     float: left;
-    border: 5px solid purple;
+    border: 2px solid black;
     padding: 15px;
     text-align: center;
 }
@@ -38,10 +38,14 @@
 /*Starting location section*/
 
 .location {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(95%, -50%);
+    transform: translate(95%, -50%);
     float: right;
     margin: auto;
     width: 300px;
-    border: 5px dashed red;
+    border: 2px solid black;
     padding: 15px;
     text-align: center;
     overflow: hidden;
@@ -58,7 +62,6 @@
 
 .middleBoard {
     width: 650px;
-    border: 5px dashed blue;
     padding: 10px;
     overflow: hidden;
 }
@@ -67,22 +70,27 @@
 /*Starting Inventory*/
 
 .inventory {
-    width: 200px;
+    display: block;
+    height: 100px;
+    width: 250px;
     float: left;
-    border: 5px solid purple;
+    border: 2px solid black;
     padding: 15px;
+    overflow: scroll;
 }
 
 
 /*Starting Messages*/
 
 .messages {
+    display: block;
+    height: 100px;
     float: right;
     width: 300px;
-    border: 5px dashed red;
+    border: 2px solid black;
     padding: 15px;
     overflow: hidden;
-    overflow: auto;
+    overflow: scroll;
 }
 
 
@@ -95,29 +103,156 @@
 /*Starting Bottom section*/
 
 .bottomBoard {
+    position: relative;
     width: 650px;
-    border: 5px dashed blue;
     padding: 10px;
     overflow: hidden;
 }
 
 
-/*Starting directions section*/
+/*Starting quests section*/
 
 .quests {
-    width: 200px;
+    display: block;
+    width: 250px;
+    height: 200px;
     float: left;
-    border: 5px solid purple;
+    border: 2px solid black;
     padding: 15px;
+    overflow: scroll;
 }
 
 
-/*Starting bottomButtons*/
+/*Starting clickable section*/
 
 .clickable {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(95%, -50%);
+    transform: translate(95%, -50%);
     float: right;
     width: 300px;
-    border: 5px dashed red;
     padding: 15px;
     overflow: hidden;
 }
+
+.left-bottom {
+    float: left;
+}
+
+.weapon {
+    float: left;
+    overflow: hidden;
+}
+
+.potion {
+    float: right;
+    overflow: hidden;
+}
+
+
+/*starting directions section*/
+
+.directions {
+    width: 260px;
+    border: 3px solid black;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+/*ending directions section*/
+
+
+/*starting northButton section*/
+
+.northButton {
+    position: relative;
+    width: 222px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.north {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*ending northButton section
+starting middleButtons Section (east/west)*/
+
+.middleButtons {
+    width: 222px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+/*ending middleButtons Section
+starting southButton section*/
+
+.southButton {
+    position: relative;
+    width: 222px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.south {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.east {
+    float: left;
+    overflow: hidden;
+}
+
+.west {
+    float: right;
+    overflow: hidden;
+}
+
+
+/*ending southButtons Section
+ending directions section
+starting bottombuttons Section*/
+
+.bottomButtons {
+    width: 300px;
+}
+
+
+/*starting usable-dropdown section*/
+
+.useable-dropdown {
+    width: 250px;
+    border: 3px solid black;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+/*ending usable-dropdown section
+starting usable-button section*/
+
+.useable-button {
+    width: 250px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+/*ending usable-button section
+ending bottomButtons section
+ending bottomBoard section
+ending gameBoard Section*/
