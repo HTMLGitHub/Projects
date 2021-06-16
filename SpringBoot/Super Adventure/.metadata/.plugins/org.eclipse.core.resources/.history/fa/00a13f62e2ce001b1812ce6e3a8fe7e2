@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package repository;
+
+import java.util.List;
+
+import engine.LootItem;
+
+/**
+ * @author bak12
+ *
+ */
+public class LootItemRepositoryImpl implements LootItemRepository
+{
+
+	@Override
+	public boolean createLootItem(LootItem li)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<LootItem> getAllLootItems()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public LootItem findLootItemById(int Id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

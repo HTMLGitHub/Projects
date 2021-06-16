@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package repository;
+
+import java.util.List;
+
+import engine.Weapon;
+
+/**
+ * @author bak12
+ *
+ */
+public class WeaponRepositoryImpl implements WeaponRepository
+{
+
+	@Override
+	public boolean createWeapon(Weapon weapon)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Weapon> getAllWeapons()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Weapon getWeaponById(int Id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

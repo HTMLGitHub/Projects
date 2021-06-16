@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package repository;
+
+import engine.Location;
+
+/**
+ * @author bak12
+ *
+ */
+public class LocationRepositoryImpl implements LocationRepository
+{
+
+	@Override
+	public boolean createLocation(Location location)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateLocation(Location location)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Location getLocationById(int Id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

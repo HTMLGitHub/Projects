@@ -12,7 +12,7 @@
 	<artifactId>Super-Adventure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SuperAdventure</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Text Based RPG</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -49,6 +49,16 @@
 			<groupId>org.springframework.restdocs</groupId>
 			<artifactId>spring-restdocs-mockmvc</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.11.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
 

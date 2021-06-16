@@ -6,7 +6,12 @@ package engine;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -21,13 +26,27 @@ import lombok.ToString;
 @Getter @Setter @ToString @EqualsAndHashCode(callSuper=true)
 public class Player extends LivingCreature
 {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LivingCreatureSequence")
+	@SequenceGenerator(name="LivingCreatureSequence", sequenceName="LIVINGCREATURE_SEQ", allocationSize=1)
+	private int id;
+	
+	@Column(name="Gold")
 	private int Gold;
+	
+	@Column(name="ExperiencePoints")
 	private int ExperiencePoints;
+	
+	@Column(name="Level")
 	private int Level;
 	
+	@Column(name="CurrentLocation")
 	private Location CurrentLocation;
 	
+	@Column(name="Inventory")
 	private List<InventoryItem> Inventory;
+	
+	@Column(name="Quests")
 	private List<PlayerQuest> Quests;
 	
 	/**

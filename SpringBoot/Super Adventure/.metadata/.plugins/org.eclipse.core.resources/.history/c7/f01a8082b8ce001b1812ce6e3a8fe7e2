@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package repository;
+
+/**
+ * @author bak12
+ *
+ */
+public interface QuestCompletionItemRepository
+{
+
+}

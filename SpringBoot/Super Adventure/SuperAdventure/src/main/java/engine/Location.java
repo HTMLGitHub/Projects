@@ -3,8 +3,12 @@
  */
 package engine;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -19,16 +23,36 @@ import lombok.ToString;
 @Getter @Setter @ToString @EqualsAndHashCode
 public class Location
 {
-	private @Id int Id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LocationSequence")
+	@SequenceGenerator(name="LocationSequence", sequenceName="LOCATION_SEQ", allocationSize=1)
+	private int Id;
+	
+	@Column(name = "Name")
 	private String Name;
+	
+	@Column(name = "Description")
 	private String Description;
 	
+	@Column(name="ItemRequiredToEnter")
 	private Item ItemRequiredToEnter;
+	
+	@Column(name="QuestAvailableHere")
 	private Quest QuestAvailablehere;
+	
+	@Column(name="MonsterLivingHere")
 	private Monster MonsterLivingHere;
+	
+	@Column(name="LocationToNorth")
 	private Location LocationToNorth;
+	
+	@Column(name="LocationToSouth")
 	private Location LocationToSouth;
+	
+	@Column(name="LocationToEast")
 	private Location LocationToEast;
+	
+	@Column(name="LocationToWest")
 	private Location LocationToWest;
 	
 	/**
