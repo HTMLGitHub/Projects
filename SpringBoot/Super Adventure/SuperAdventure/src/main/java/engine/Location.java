@@ -62,9 +62,9 @@ public class Location
 	 */
 	public Location(int id, String name, String description)
 	{
-		Id = id;
-		Name = name;
-		Description = description;
+		this.Id = id;
+		this.Name = name;
+		this.Description = description;
 	}
 	
 	/**
@@ -75,10 +75,7 @@ public class Location
 	 */
 	public Location(int id, String name, String description, Item itemRequiredToEnter)
 	{
-		super();
-		Id = id;
-		Name = name;
-		Description = description;
+		this(id, name, description);
 		ItemRequiredToEnter = itemRequiredToEnter;
 	}
 	
@@ -90,10 +87,7 @@ public class Location
 	 */
 	public Location(int id, String name, String description, Quest questAvailablehere)
 	{
-		super();
-		Id = id;
-		Name = name;
-		Description = description;
+		this(id, name, description);
 		QuestAvailablehere = questAvailablehere;
 	}
 	
@@ -105,10 +99,7 @@ public class Location
 	 */
 	public Location(int id, String name, String description, Monster monsterLivingHere)
 	{
-		super();
-		Id = id;
-		Name = name;
-		Description = description;
+		this(id, name, description);
 		MonsterLivingHere = monsterLivingHere;
 	}		
 	

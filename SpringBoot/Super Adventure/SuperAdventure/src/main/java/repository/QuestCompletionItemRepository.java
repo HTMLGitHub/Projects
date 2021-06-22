@@ -14,6 +14,8 @@ import engine.QuestCompletionItem;
 public interface QuestCompletionItemRepository
 {
 	public boolean createQuestCompletionItem(QuestCompletionItem qci);
+	public boolean updateQuestCompletionItem(QuestCompletionItem qci);
+	public boolean deleteQuestCompletionItem(QuestCompletionItem qci);
 	public List<QuestCompletionItem> getAllQuestCompletionItems();
 	public QuestCompletionItem findQuestCompletionItemById(int Id);
 }

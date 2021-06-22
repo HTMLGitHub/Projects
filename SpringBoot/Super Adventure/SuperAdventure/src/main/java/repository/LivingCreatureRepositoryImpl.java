@@ -5,6 +5,7 @@ package repository;
 
 import java.util.List;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
@@ -75,5 +76,40 @@ public class LivingCreatureRepositoryImpl implements LivingCreatureRepository
 		}
 		log.error("No Living Creature Found");
 		return null;
+	}
+
+	@Override
+	public boolean updateLivingCreature(LivingCreature creature)
+	{
+		try
+		{
+			sessionFactory.getCurrentSession().update(creature);
+		}
+		catch(EntityNotFoundException ex)
+		{
+			log.error("Living Creature Not Found");
+			log.error(ex.getMessage());
+			return false;
+		}
+		log.trace("Living Creature Updated");
+		return true;
+	}
+
+	@Override
+	public boolean deleteLivingCreature(LivingCreature creature)
+	{
+		LivingCreature lc = this.getCreatureById(creature.getId());
+		if(lc!=null)
+		{
+			sessionFactory.getCurrentSession().delete(lc);
+			lc = this.getCreatureById(creature.getId());
+			if(lc==null)
+			{
+				log.trace("Living Creature Deleted");
+				return true;
+			}
+		}
+		log.error("Error Deleting Living Creature");
+		return false;
 	}
 }

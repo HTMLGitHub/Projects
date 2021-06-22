@@ -5,6 +5,7 @@ package repository;
 
 import java.util.List;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
@@ -75,5 +76,40 @@ public class LootItemRepositoryImpl implements LootItemRepository
 		}
 		log.error("No Loot Items Found");
 		return null;
+	}
+
+	@Override
+	public boolean updateLootItem(LootItem li)
+	{
+		try
+		{
+			sessionFactory.getCurrentSession().update(li);
+		}
+		catch(EntityNotFoundException ex)
+		{
+			log.error("Unable to Update Loot Item");
+			log.error(ex.getMessage());
+			return false;
+		}
+		log.trace("Loot Item Updated");
+		return true;
+	}
+
+	@Override
+	public boolean deleteLootItem(LootItem li)
+	{
+		LootItem lootItem = this.findLootItemById(li.getId());
+		if(lootItem!=null)
+		{
+			sessionFactory.getCurrentSession().delete(li);
+			lootItem = this.findLootItemById(li.getId());
+			if(lootItem == null)
+			{
+				log.trace("Loot Item Deleted");
+				return true;
+			}
+		}
+		log.error("Could Not Delete Loot Item");
+		return false;
 	}
 }

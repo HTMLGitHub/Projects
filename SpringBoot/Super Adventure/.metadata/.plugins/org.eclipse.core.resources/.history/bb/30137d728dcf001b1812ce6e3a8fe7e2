@@ -1,0 +1,85 @@
+/**
+ * 
+ */
+package service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import engine.Monster;
+import engine.Player;
+import repository.MonsterRepository;
+import repository.PlayerRepository;
+
+/**
+ * @author bak12
+ *
+ */
+@Service("CreatureService")
+public class CreatureServiceImpl implements MonsterService
+{
+	@Autowired
+	public MonsterRepository monsterRepo;
+	
+	@Autowired
+	public PlayerRepository playerRepo;
+	
+	@Override
+	public boolean createNewPlayer(Player player)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Player findPlayerById(int Id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> findAllPlayers()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deletePlayer(Player player)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updatePlayer(Player player)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean createNewMonster(Monster monster)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Monster findMonsterById(int Id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Monster> findAllMonsters()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

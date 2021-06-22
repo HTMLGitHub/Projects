@@ -5,6 +5,7 @@ package repository;
 
 import java.util.List;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
@@ -97,5 +98,23 @@ public class InventoryItemRepositoryImpl implements InventoryItemRepository
 		}
 		log.error("No Inventory Items Found");
 		return null;
+	}
+
+	@Override
+	public boolean updateInventoryItem(InventoryItem ii)
+	{
+		try
+		{
+			sessionFactory.getCurrentSession().update(ii);
+		}
+		catch(EntityNotFoundException ex)
+		{
+			log.error("Unable to Update Inventory Item");
+			log.error(ex.getMessage());
+			return false;
+		}
+		
+		log.trace("Inventory Item Updated");
+		return true;
 	}
 }

@@ -5,6 +5,7 @@ package repository;
 
 import java.util.List;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
@@ -75,5 +76,42 @@ public class ItemRepositoryImpl implements ItemRepository
 		}
 		log.error("No Items Found");
 		return null;
+	}
+
+	@Override
+	public boolean deleteItem(Item item)
+	{
+		Item i = this.findItemById(item.getId());
+		if(i!=null)
+		{
+			sessionFactory.getCurrentSession().delete(item);
+			
+			i = this.findItemById(item.getId());
+			
+			if(i==null)
+			{
+				log.trace("Item Deleted");
+				return true;
+			}
+		}
+		log.error("Could not delete Item");
+		return false;
+	}
+
+	@Override
+	public boolean updateItem(Item item)
+	{
+		try
+		{
+			sessionFactory.getCurrentSession().update(item);
+		}
+		catch(EntityNotFoundException ex)
+		{
+			log.error("Unable to update Item");
+			log.error(ex.getMessage());
+			return false;
+		}
+		log.trace("Item Updated");
+		return true;
 	}
 }

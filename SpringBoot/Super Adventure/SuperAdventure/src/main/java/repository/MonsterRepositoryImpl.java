@@ -5,6 +5,7 @@ package repository;
 
 import java.util.List;
 
+import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
@@ -75,5 +76,41 @@ public class MonsterRepositoryImpl implements MonsterRepository
 		}
 		log.error("No Monsters Found");
 		return null;
+	}
+
+	@Override
+	public boolean deleteMonster(Monster monster)
+	{
+		Monster creature = this.getMonsterById(monster.getId());
+		if(creature!=null)
+		{
+			sessionFactory.getCurrentSession().delete(monster);
+			
+			creature = this.getMonsterById(monster.getId());
+			if(creature==null)
+			{
+				log.trace("Monster Destroyed");
+				return true;
+			}			
+		}
+		log.error("Unable to destroy Monster");
+		return false;
+	}
+
+	@Override
+	public boolean updateMonster(Monster monster)
+	{
+		try
+		{
+			sessionFactory.getCurrentSession().update(monster);
+		}
+		catch(EntityNotFoundException ex)
+		{
+			log.error("Unable to Update Monster");
+			log.error(ex.getMessage());
+			return false;
+		}
+		log.trace("Monster Updated");
+		return true;
 	}
 }

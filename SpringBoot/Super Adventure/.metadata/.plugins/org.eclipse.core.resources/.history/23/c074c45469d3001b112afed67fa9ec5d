@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package service;
+
+/**
+ * @author bak12
+ *
+ */
+public class ItemServiceImpl implements ItemService
+{
+
+}

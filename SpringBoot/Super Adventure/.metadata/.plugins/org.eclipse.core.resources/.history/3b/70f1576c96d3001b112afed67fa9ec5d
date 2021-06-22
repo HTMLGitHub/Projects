@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package service;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * @author bak12
+ *
+ */
+@Service("CreatureService")
+public class LivingCreatureServiceImpl implements LivingCreatureService
+{
+
+}

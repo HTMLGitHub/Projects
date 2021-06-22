@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package service;
+
+import java.util.List;
+import engine.Monster;
+
+/**
+ * @author bak12
+ *
+ */
+public interface MonsterService
+{
+	public boolean createNewMonster(Monster monster);
+	public Monster findMonsterById(int Id);
+	public List<Monster> findAllMonsters();	
+}

@@ -94,4 +94,21 @@ public class LocationRepositoryImpl implements LocationRepository
 		return null;
 	}
 
+	@Override
+	public boolean deleteLocation(Location location)
+	{
+		Location loc = this.getLocationById(location.getId());
+		if(loc!=null)
+		{
+			sessionFactory.getCurrentSession().delete(location);
+			loc = this.getLocationById(location.getId());
+			if(loc==null)
+			{
+				log.trace("Location Deleted");
+				return true;
+			}
+		}
+		log.error("Could not delete Location");
+		return false;
+	}
 }

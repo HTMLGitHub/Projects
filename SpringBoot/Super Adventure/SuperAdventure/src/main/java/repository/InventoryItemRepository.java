@@ -15,6 +15,7 @@ public interface InventoryItemRepository
 {
 	public boolean createInventoryItem(InventoryItem ii);
 	public boolean removeInventoryItem(InventoryItem ii);
+	public boolean updateInventoryItem(InventoryItem ii);
 	public List<InventoryItem> getAllInventoryItems();
 	public InventoryItem findInventoryItemById(int Id);
 }
