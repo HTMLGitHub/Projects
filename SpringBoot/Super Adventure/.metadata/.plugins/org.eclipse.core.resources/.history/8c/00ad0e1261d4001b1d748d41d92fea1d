@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package controller;
+
+/**
+ * @author bak12
+ *
+ */
+public interface WorldController
+{
+	public abstract void PopulateInitialItems();
+	public abstract void PopulateeInitialMonsters();
+	public abstract void PopulateeInitialQuests();
+	public abstract void PopulateInitialLocations();
+}

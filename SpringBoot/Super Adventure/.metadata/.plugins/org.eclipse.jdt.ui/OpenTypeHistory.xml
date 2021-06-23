@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{InventoryItemRepository.java[InventoryItemRepository" modifiers="513" timestamp="1623854855031"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{ItemRepository.java[ItemRepository" modifiers="513" timestamp="1623854298237"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{InventoryItemRepository.java[InventoryItemRepository" modifiers="513" timestamp="1624377006444"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{ItemRepository.java[ItemRepository" modifiers="513" timestamp="1624373491193"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{LivingCreatureRepository.java[LivingCreatureRepository" modifiers="513" timestamp="1623959228923"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{LocationRepository.java[LocationRepository" modifiers="513" timestamp="1623875727074"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{LootItemRepository.java[LootItemRepository" modifiers="513" timestamp="1623855172608"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{LocationRepository.java[LocationRepository" modifiers="513" timestamp="1624377183505"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{LootItemRepository.java[LootItemRepository" modifiers="513" timestamp="1624377183439"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{MonsterRepository.java[MonsterRepository" modifiers="513" timestamp="1623959339350"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{PlayerQuestRepository.java[PlayerQuestRepository" modifiers="513" timestamp="1623855535580"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{PlayerRepository.java[PlayerRepository" modifiers="513" timestamp="1623879801240"/>
     <typeInfo handle="=SuperAdventure/C:\/Users\/bak12\/.m2\/repository\/org\/springframework\/restdocs\/spring-restdocs-core\/2.0.5.RELEASE\/spring-restdocs-core-2.0.5.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/test=/true=/=/maven.groupId=/org.springframework.restdocs=/=/maven.artifactId=/spring-restdocs-core=/=/maven.version=/2.0.5.RELEASE=/=/maven.scope=/test=/&lt;org.springframework.restdocs.snippet(PlaceholderResolverFactory.class[PlaceholderResolverFactory" modifiers="1537" timestamp="1621958886580"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{QuestCompletionItemRepository.java[QuestCompletionItemRepository" modifiers="513" timestamp="1623857742377"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{QuestRepository.java[QuestRepository" modifiers="513" timestamp="1623857170623"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{WeaponRepository.java[WeaponRepository" modifiers="513" timestamp="1623857826194"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;controller{WorldController.java[WorldController" modifiers="513" timestamp="1623880882647"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{PlayerService.java[PlayerService" modifiers="513" timestamp="1623957681344"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{ItemService.java[ItemService" modifiers="513" timestamp="1623881023697"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{QuestService.java[QuestService" modifiers="513" timestamp="1623881134638"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{QuestCompletionItemRepository.java[QuestCompletionItemRepository" modifiers="513" timestamp="1624377183410"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{QuestRepository.java[QuestRepository" modifiers="513" timestamp="1624373491005"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repository{WeaponRepository.java[WeaponRepository" modifiers="513" timestamp="1624377183378"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{PlayerService.java[PlayerService" modifiers="513" timestamp="1624372999144"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{ItemService.java[ItemService" modifiers="513" timestamp="1624372999272"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{QuestService.java[QuestService" modifiers="513" timestamp="1624372999217"/>
     <typeInfo handle="=SuperAdventure/C:\/Users\/bak12\/.m2\/repository\/org\/hibernate\/hibernate-core\/4.3.11.Final\/hibernate-core-4.3.11.Final.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate=/=/maven.artifactId=/hibernate-core=/=/maven.version=/4.3.11.Final=/=/maven.scope=/compile=/&lt;org.hibernate.loader.plan.spi(QuerySpaces.class[QuerySpaces" modifiers="1537" timestamp="1616509862079"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{HealingPotionService.java[HealingPotionService" modifiers="513" timestamp="1624376152799"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{HealingPotionService.java[HealingPotionService" modifiers="513" timestamp="1624376401848"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{InventoryItemService.java[InventoryItemService" modifiers="513" timestamp="1624376401816"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{LivingCreatureService.java[LivingCreatureService" modifiers="513" timestamp="1624392674714"/>
-    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{LocationService.java[LocationService" modifiers="513" timestamp="1624393132414"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{LivingCreatureService.java[LivingCreatureService" modifiers="513" timestamp="1624392847443"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{LocationService.java[LocationService" modifiers="513" timestamp="1624393441970"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{PlayerQuestService.java[PlayerQuestService" modifiers="513" timestamp="1624395435066"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{QuestCompletionItemService.java[QuestCompletionItemService" modifiers="513" timestamp="1624396823237"/>
     <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{WeaponService.java[WeaponService" modifiers="513" timestamp="1624396926603"/>
+    <typeInfo handle="=SuperAdventure/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;controller{WorldController.java[WorldController" modifiers="513" timestamp="1624484435227"/>
 </typeInfoHistroy>

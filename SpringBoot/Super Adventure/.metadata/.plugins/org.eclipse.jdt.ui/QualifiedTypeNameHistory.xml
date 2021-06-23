@@ -19,4 +19,6 @@
     <fullyQualifiedTypeName name="engine.Item"/>
     <fullyQualifiedTypeName name="engine.Location"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.revature.util.OperatorMessageUtil"/>
+    <fullyQualifiedTypeName name="service.LocationService"/>
 </qualifiedTypeNameHistroy>

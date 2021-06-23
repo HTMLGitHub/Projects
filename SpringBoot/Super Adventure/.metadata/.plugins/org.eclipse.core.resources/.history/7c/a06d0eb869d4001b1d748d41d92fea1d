@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package controller;
+
+import java.util.List;
+
+import com.revature.ajax.OperatorMessage;
+
+import engine.Item;
+import engine.Location;
+import engine.Monster;
+import engine.Quest;
+
+/**
+ * @author bak12
+ *
+ */
+public interface WorldController
+{
+	//create 
+	public abstract OperatorMessage CreateItem(Item item);
+	public abstract OperatorMessage CreateMonster(Monster monster);
+	public abstract OperatorMessage CreateQuest(Quest quest);
+	public abstract OperatorMessage CreateLocation(Location location);
+	
+	//update
+	public abstract OperatorMessage UpdateItem(Item item);
+	public abstract OperatorMessage UpdateMonster(Monster monster);
+	public abstract OperatorMessage UpdateQuest(Quest quest);
+	public abstract OperatorMessage UpdateLocation(Location location);
+	
+	//delete
+	public abstract OperatorMessage DeleteItem(Item item);
+	public abstract OperatorMessage DeleteMonster(Monster monster);
+	public abstract OperatorMessage DeleteQuest(Quest quest);
+	public abstract OperatorMessage DeleteLocation(Location location);
+	
+	//find all
+	public abstract List<Item> findAllItems();
+	public abstract List<Monster> findAllMonsters();
+	public abstract List<Quest> findAllQuests();
+	public abstract List<Location> findAllLocations();
+	
+	
+}
