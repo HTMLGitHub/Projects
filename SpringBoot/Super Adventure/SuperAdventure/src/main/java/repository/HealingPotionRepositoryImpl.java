@@ -63,6 +63,7 @@ public class HealingPotionRepositoryImpl implements HealingPotionRepository
 		HealingPotion hp = this.findHealingById(healing.getId());
 		if(hp!=null)
 		{
+			sessionFactory.getCurrentSession().delete(healing);
 			hp = this.findHealingById(healing.getId());
 			if(hp==null)
 			{
