@@ -1,3 +1,4 @@
+var countDown = document.querySelector('.clock h1');
 setInterval(() => {
     var now = new Date();
     var hoursToMidnight = 24 - now.getHours();
@@ -11,5 +12,5 @@ setInterval(() => {
     console.log(minutes);
     console.log(seconds);
 
-    document.querySelector('.clock h1').textContent = `${hoursToMidnight}:${minutes}:${seconds}`;
+    countDown.textContent = `${hoursToMidnight}:${minutes}:${seconds}`;
 }, 1000);

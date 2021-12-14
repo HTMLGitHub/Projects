@@ -1,0 +1,41 @@
+html {
+    background: url("https://assets.codepen.io/6060109/salaries-background.png") no-repeat right bottom;
+    background-size: cover;
+    font-family: Hellix;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 450px;
+    height: 400px;
+    text-align: center;
+}
+
+.company {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.company>* {
+    padding: 0px 10px;
+}
+
+.company h3:last-of-type {
+    position: absolute;
+    right: 10%;
+}
+
+.company img {
+    width: 20px;
+}

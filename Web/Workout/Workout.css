@@ -1,0 +1,108 @@
+    html,
+    body {
+        margin: 0;
+        color: white;
+        font-family: Ubuntu;
+    }
+    
+    body {
+        background: linear-gradient(90deg, rgba(50, 50, 123, 0.5) 0%, rgba(50, 50, 123, 0.2) 100%);
+    }
+    
+    .bg {
+        width: 100vw;
+        height: 100vh;
+        background: url("https://assets.codepen.io/6060109/fitness-app-background_1.png") right top no-repeat;
+        background-size: cover;
+        opacity: .4;
+        position: fixed;
+        z-index: -2;
+    }
+    
+    .tracker {
+        padding-top: 30px;
+    }
+    
+    .title {
+        height: 80px;
+        background: #5D5FEF;
+        width: 400px;
+        transform: skew(-10deg);
+    }
+    
+    .day-row {
+        width: 700px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, .2);
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        text-align: right;
+    }
+    
+    .lifts {
+        display: flex;
+    }
+    
+    .day-row>h3 {
+        margin-right: 30px;
+        width: 70px;
+    }
+    
+    .day-row img {
+        margin: 0 10px;
+    }
+    
+    ul {
+        display: flex;
+        width: 600px;
+        padding: 0 100px;
+        margin-left: 20px;
+    }
+    
+    li {
+        list-style-type: none;
+        width: 200px;
+        text-align: center;
+        margin-left: 19px;
+    }
+    
+    .lifts {
+        width: 100%;
+    }
+    /* Make the exercises line up in the right columns with justify-content */
+    
+    .tues .lifts {
+        justify-content: flex-end;
+    }
+    
+    .weds .lifts {
+        justify-content: space-between;
+    }
+    /* This one might not line up... Try adding margin? */
+    
+    .thurs .lifts {
+        justify-content: space-evenly;
+        margin-left: -10px;
+    }
+    
+    .fri .lifts {
+        justify-content: center;
+    }
+    /* This one is challenging... try adding an extra <div> */
+    
+    .sat .lifts {
+        justify-content: space-between;
+    }
+    
+    .sun .lifts {
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
