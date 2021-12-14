@@ -1,0 +1,166 @@
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    font-family: Montserrat;
+}
+
+body {
+    background: linear-gradient(360deg, #0D0642 0%, #040213 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url("https://assets.codepen.io/6060109/2-flames.png") no-repeat left bottom;
+    background-size: 100%;
+}
+
+.top-bar,
+.feed,
+.controls {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.top-bar {
+    width: 300px;
+    justify-content: space-between;
+}
+
+.feed {
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+}
+
+@keyframes fadeInDown {
+    from {
+        margin-top: -30px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+.feed img {
+    animation: fadeInDown .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.feed img:first-child,
+.feed img:last-child {
+    opacity: .5;
+}
+
+.controls {
+    width: 180px;
+    bottom: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 100%;
+    display: flex;
+    transition: .4s ease all;
+}
+
+.control:hover {
+    opacity: .9;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.ctrl-small {
+    padding: 10px;
+}
+
+.control img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* The animation code */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.got-match {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 90;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+    animation: fadeIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.modal {
+    width: 500px;
+    height: 600px;
+    background: #1F1A3D;
+    box-shadow: 5px 5px 150px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.img-container img {
+    margin: 0 15px;
+}
+
+button {
+    display: inline-block;
+    width: 60%;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-radius: 30px;
+    font-family: Montserrat;
+    text-transform: Uppercase;
+    border: none;
+    transition: .4s ease all;
+}
+
+button:hover {
+    opacity: .9;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.btn-primary {
+    background: linear-gradient(238.44deg, #FF7854 11.29%, #FD267D 62.69%);
+    color: white;
+}
+
+.btn-secondary {
+    box-shadow: inset 0 0 12px #0cc, /* Inset shadow */
+    0 0 12px #0cc, /* Outset shadow */
+    inset -999px 0 0 #fff;
+    /* The background color */
+}
