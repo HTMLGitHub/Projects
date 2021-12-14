@@ -2,14 +2,6 @@ var joinButton = document.querySelector('.join-button');
 joinButton.addEventListener('click', goToSecondState);
 
 function goToSecondState() {
-    /* 
-      When button is clicked...
-        1. Hide .left & .panels-stage-1 (display "none")
-        2. for .right set width to 100%
-        3. for .panels-stage-2 set display to block
-      */
-
-    // Hint: Follow this pattern!
     var left = document.querySelector('.left');
     left.style.display = 'none';
 
