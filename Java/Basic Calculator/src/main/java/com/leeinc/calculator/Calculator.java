@@ -91,10 +91,13 @@ public class Calculator extends JFrame implements ActionListener
         {
             display.setText(display.getText() + command);
         }
-        else if(command.equals(".") && dot == false)
+        else if(command.equals("."))
         {
-            display.setText(display.getText() + command);
-            dot = true;
+            if(dot == false)
+            {
+                display.setText(display.getText() + command);
+                dot = true;
+            }
         }
         else if(command.equals("="))
         {
@@ -126,7 +129,8 @@ public class Calculator extends JFrame implements ActionListener
         {
             firstNumber = Double.parseDouble(display.getText());
             operator = command;
-            display.setText("");
+            display.setText("");  
+            dot = false;
         }
     }    
 }
